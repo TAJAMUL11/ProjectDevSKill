@@ -22,7 +22,7 @@ header {
     background-size: cover;
 }
 header h1{
-    font-size: 2.7rem;
+    font-size: 3rem;
     width: 50%;
     margin-bottom: .6rem;
     color: #fff;
@@ -33,14 +33,14 @@ header h1{
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
-   
+   gap: .5rem;
     
 }
 
 ul li {
-    padding: .5rem;
+    padding: .4rem;
     border-radius: 7px;
     transition: .3s ease-in-out;
     border: 1px solid #fff;
@@ -49,10 +49,11 @@ ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 nav ul li:hover{
-    background-color: #ffffff4d;
+    background-color: #ffffff36;
 }
 
 
@@ -61,8 +62,6 @@ nav ul li:hover{
 
 #Featured-recipes{
     min-height: 100vh;
-    margin-bottom: 30px;
-   /* background: linear-gradient(153deg,#545454,rgba(61, 189, 198, 0.692)); */
    background-image: url(./Images/leaf.jpg);
    background-position: center;
    background-repeat: no-repeat;
@@ -70,10 +69,10 @@ nav ul li:hover{
 }
 
 h2 {
-    color: #0ef;
+    color: #f5f5f5;
     padding-bottom: 5px;
     margin-bottom: 15px;
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     text-align: center;
 }
 
@@ -85,10 +84,10 @@ h3 {
 
 
 footer {
-    background-color: #2a2828eb;
+    background-color: #1c1b1beb;
     color: #fff;
     text-align: center;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     
@@ -122,28 +121,25 @@ footer .icons{
 /* Additional styles for recipe details */
 section div {
     background-color: #ffffff24;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(3px);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 .main_div h3 {
-    color: #fff;
+    color: #e8cdcd;
     font-weight: 500;
     font-size: 1.8rem;
-    border-bottom: 2px solid #fff;
-    width: 50%;
-    text-align: center;
     margin-bottom: .5rem;
 
 }
 
 .main_div p {
-    color: #fff;
-    font-weight: 300;
-    margin: 1rem;
+    color: #eaeaea;
+    font-weight: 500;
+    margin: .8rem .7rem;
+    font-size: 1.3rem;
 }
 .main_div ul{
     margin: .3rem .8rem .6rem;
@@ -151,33 +147,77 @@ section div {
 
 .main_div ul li {
     margin-bottom: 5px;
-    color: #0ef;
+    color: #fff;
     list-style: lower-roman;
     margin-left: .6rem;
     border: none;
+    font-size: 1.3rem;
 }
 
 
+@media (max-width: 1180px) {
+    html{
+        font-size: 90%;
+    }
+}
+
 @media (max-width: 767px) {
+    header h1{
+        font-size: 2.8rem;
+    }
     html{
         font-size: 85%;
     }
-    .main_div{
-        padding: auto;
+    nav ul li a {
+
+        font-size: 1.3rem;
     }
-    header h1{
-        font-size: 2.3rem;
+    .main_div p {
+        margin: .6rem .5rem;
+        font-size: 1.15rem;
+    }
+    
+    .main_div ul li {
+        margin-left: .5rem;
+        font-size: 1.15rem;
     }
 
 }
 
-@media (max-width: 547px) {
+@media (max-width: 617px) {
     html{
-        font-size: 75%;
+        font-size: 80%;
     }
     header h1{
-        font-size: 1.8rem;
+        font-size: 2.6rem;
+    }
+    .icons a i{
+        font-size: 1.4rem;
+        padding: .3rem;
+
+    
     }
     
 
+}
+
+@media (max-width: 490px) {
+    html{
+        font-size: 70%;
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }
+    .main_div p {
+        margin: .4rem .3rem;
+        font-size: 1rem;
+    }
+    
+    .main_div ul li {
+        margin-left: .3rem;
+        font-size: 1rem;
+    }
+    header h1{
+        font-size: 2rem;
+    }
 }
