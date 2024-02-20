@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+   background-image: url(./Images/bg2.jpg);
+    padding: 1.4rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h1{
+    font-size: 2.7rem;
+    width: 50%;
+    margin-bottom: .6rem;
+    color: #fff;
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+}
+
+ul li {
+    padding: .5rem;
+    border-radius: 7px;
+    transition: .3s ease-in-out;
+    border: 1px solid #fff;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+nav ul li:hover{
+    background-color: #ffffff4d;
+}
+
+
+/* Section styles */
+
+
+#Featured-recipes{
+    min-height: 100vh;
+    margin-bottom: 30px;
+   /* background: linear-gradient(153deg,#545454,rgba(61, 189, 198, 0.692)); */
+   background-image: url(./Images/leaf.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+h2 {
+    color: #0ef;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    background-color: #2a2828eb;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+footer .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.icons a{
+    padding: .2rem;
+    text-decoration: none;
+}
+.icons a i{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .4rem;
+    transition: .3s ease-in-out;
+
+}
+
+.icons a i:hover{
+    box-shadow: 0 0 .3rem #fff;
+    border-radius: 50%;
+    
+}
+
+/* Additional styles for recipe details */
+section div {
+    background-color: #ffffff24;
+    backdrop-filter: blur(1px);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.main_div h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #fff;
+    width: 50%;
+    text-align: center;
+    margin-bottom: .5rem;
+
+}
+
+.main_div p {
+    color: #fff;
+    font-weight: 300;
+    margin: 1rem;
+}
+.main_div ul{
+    margin: .3rem .8rem .6rem;
+}
+
+.main_div ul li {
+    margin-bottom: 5px;
+    color: #0ef;
+    list-style: lower-roman;
+    margin-left: .6rem;
+    border: none;
+}
+
+
+@media (max-width: 767px) {
+    html{
+        font-size: 85%;
+    }
+    .main_div{
+        padding: auto;
+    }
+
+}
